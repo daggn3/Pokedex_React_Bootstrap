@@ -35,7 +35,7 @@ const PokemonPage = ({ match }) => {
                 <Loading/>
             ) : (
                 <div>
-                <Header />
+                
                 <Row>
                     <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Card className='my-3 p-3 rounded text-center shadow p-3 mb-5 bg-white' style={{ border: 'none' }}>
