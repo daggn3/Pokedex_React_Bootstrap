@@ -12,7 +12,7 @@ const pokemon = ({ pokemon }) => {
                 </Link>
                 <Card.Body className={`${pokemon.types[0].type.name} rounded text-white`}>
                     <Link to={`/pokemon/${pokemon.name}`} className='link-name'>
-                        <Card.Title as='div'>#{pokemon.id} : {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</Card.Title>
+                        <Card.Title as='div'>#{pokemon.id}: {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</Card.Title>
                     </Link>
                 </Card.Body>
             </Card>
