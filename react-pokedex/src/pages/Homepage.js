@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Form, Button } from 'react-bootstrap';
 
 // Components
 import Pokemon from '../components/Pokemon';
@@ -35,6 +35,7 @@ const Homepage = () => {
         {loading ? (
             <Loading/>
         ) : (
+            <div>
             <Row>
                 {pokemon.map( p =>(
                     <Col key={p.data.name} xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -42,6 +43,7 @@ const Homepage = () => {
                     </Col>
                 ))}
             </Row>
+            </div>
         )}
         </>
     )

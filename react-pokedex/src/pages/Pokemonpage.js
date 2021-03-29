@@ -4,6 +4,7 @@ import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 
+//await Promise.all(images.map(e => axios.get(e)))
 const PokemonPage = ({ match }) => {
 
     const [pokemonInfo, setPokemonInfo] = useState();
@@ -54,7 +55,7 @@ const PokemonPage = ({ match }) => {
                                     <Row>
                                         {pokemonInfo.types.map(t => (
                                             <Col key={t.type.name}>
-                                                <div className={`${t.type.name} rounded px-4 py-1`} style={{ color: 'white' }}>
+                                                <div className={`${t.type.name} rounded px-4 py-1`} style={{ color: 'white'  }}>
                                                     {t.type.name.toUpperCase()}
                                                 </div>
                                             </Col>
@@ -63,16 +64,19 @@ const PokemonPage = ({ match }) => {
                                     <Row>
                                         <Col>
                                             <Card.Img style={{ width: '15rem' }} src={pokemonInfo.sprites.front_default}/>
-                                            <Card.Text>Normal Form</Card.Text>
+                                            <Card.Text className =" mt-2" style={{ fontWeight:"bold" }}>Normal Form</Card.Text>
+                                
                                         </Col>
                                         <Col>
+                                            
                                             <Card.Img style={{ width: '15rem' }} src={pokemonInfo.sprites.front_shiny}/>
-                                            <Card.Text>Shiny Form</Card.Text>
+                                            <Card.Text style={{ fontWeight:"bold" }}>Shiny Form</Card.Text>
+                    
                                         </Col>
                                     </Row>
                                     <Row className='mt-4'>
                                         <Col  xs={12} sm={12} md={12} lg={12} xl={12}>
-                                            <div className='px-4 py-1 rounded' style={{ border: '1px black solid' }}>Abilities</div>
+                                            <div className='px-4 py-1 rounded bg-primary text-white' style={{ border: 'none' }}>Abilities</div>
                                         </Col>
                                     </Row>
                                     <Row className='text-center'>
@@ -82,8 +86,27 @@ const PokemonPage = ({ match }) => {
                                                     {a.ability.name.toUpperCase()}
                                                 </div>
                                             </Col>
+                                            
                                         ))}
                                     </Row>
+                                    <Row className='mt-4'>
+                                        <Col  xs={12} sm={12} md={12} lg={12} xl={12}>
+                                            <div className='px-4 py-1 rounded bg-danger text-white' style={{ border: 'none'  }}>Stats</div>
+                                        </Col>
+                                        <Row className='text-center'>
+                                        {pokemonInfo.stats.map(a => (
+                                            <Col key={a.stat.name} xs={6} sm={6} md={6} lg={6} xl={6}>
+                                                <div className={`rounded px-4 py-1 bg-green`}>
+                                                    {a.stat.name.toUpperCase()}
+                                                    : {a.base_stat}
+                                                </div>
+                                            </Col>
+                                            
+                                        ))}
+                                    </Row>
+                                    
+                                    </Row>
+                                    
                                 </Card.Text>
                             </Card.Body>
                         </Card>
