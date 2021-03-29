@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Row, Col, Form, Button } from 'react-bootstrap';
+import { Row, Col, Nav, Form, Button } from 'react-bootstrap';
 
 // Components
 import Pokemon from '../components/Pokemon';
