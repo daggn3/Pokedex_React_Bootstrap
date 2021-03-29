@@ -8,6 +8,9 @@ import PokemonPage from './pages/Pokemonpage';
 
 // Components
 import Header from './components/Header';
+import Gen1page from './pages/Gen1page';
+import Gen2page from "./pages/Gen2page"
+import Gen3page from "./pages/Gen3page"
 
 const App = () => {
   return (
@@ -15,6 +18,9 @@ const App = () => {
       <Header/>
       <Container>
         <Route exact path='/' component={Homepage} />
+        <Route exact path='/gen1' component={Gen1page} />
+        <Route exact path='/gen2' component={Gen2page} />
+        <Route exact path='/gen3' component={Gen3page} />
         <Route path='/pokemon/:id' component={PokemonPage}/>
       </Container>
     </Router>

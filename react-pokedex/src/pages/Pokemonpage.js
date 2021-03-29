@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
+import Header from '../components/Header';
 
 //await Promise.all(images.map(e => axios.get(e)))
 const PokemonPage = ({ match }) => {
@@ -33,6 +34,8 @@ const PokemonPage = ({ match }) => {
             {loading ? (
                 <Loading/>
             ) : (
+                <div>
+                <Header />
                 <Row>
                     <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Card className='my-3 p-3 rounded text-center shadow p-3 mb-5 bg-white' style={{ border: 'none' }}>
@@ -112,6 +115,7 @@ const PokemonPage = ({ match }) => {
                         </Card>
                     </Col>
                 </Row>
+                </div>
             )}
         </>
     )
