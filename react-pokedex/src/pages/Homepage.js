@@ -31,7 +31,7 @@ const Homepage = () => {
        
             <h1>A React Pokédex</h1>
             <p>
-                A Simple Pokédex Built Using React and Bootstrap.
+                A Simple Pokédex Built Using React and Bootstrap and Populated by the PokeAPI.
             </p>
         </Container>
         </Jumbotron >
