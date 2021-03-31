@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
+import { HouseFill } from 'react-bootstrap-icons';
 
 
 
@@ -41,7 +42,7 @@ const PokemonPage = ({ match }) => {
 
     return (
         <>
-        <Button style = {{marginTop: "10px", backgroundColor:"#09bdb7", border:"none"  }} onClick={handleClick}>Return Home</Button>{' '}
+         <Button style = {{ marginTop: "10px", backgroundColor:"#09bdb7", border:"none"  }} onClick={handleClick}> < HouseFill size={30} /></Button>{' '}
             {loading ? (
                 <Loading/>
             ) : (
