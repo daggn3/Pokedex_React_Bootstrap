@@ -26,7 +26,7 @@ const Homepage = () => {
             <Jumbotron fluid style = {{boxShadow: "10px 10px 5px #ccc", marginBottom:"50px", borderRadius: "10px", backgroundColor:"#09bdb7", color:"white" }}>
         <Container>
        
-            <h1> <img src={pokeball} style = {{width:"50px", marginBottom: "5px"}}/> A React Pokédex </h1>
+            <h1> <img src={pokeball} style = {{width:"50px", marginBottom: "15px"}}/> A React Pokédex </h1>
             
             <p>
                 A Simple Pokédex Built Using React and Bootstrap and Populated by the PokeAPI.
