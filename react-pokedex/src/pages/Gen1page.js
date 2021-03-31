@@ -18,7 +18,7 @@ const Gen1page = (props) => {
 
     const getPokemon = async () => {
         let pokemonArray = [];
-        for(let i = 1; i <= 130; i ++){
+        for(let i = 1; i <= 151; i ++){
             pokemonArray.push(await getPokemonData(i));
         }
         
