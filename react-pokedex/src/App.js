@@ -17,7 +17,7 @@ const App = () => {
     <Router>
       <Header/>
       <Container>
-        <Route exact path='/Pokedex_React_Bootstrap/' component={Homepage} />
+        <Route exact path='/' component={Homepage} />
         <Route exact path='/gen1' component={Gen1page} />
         <Route exact path='/gen2' component={Gen2page} />
         <Route exact path='/gen3' component={Gen3page} />
