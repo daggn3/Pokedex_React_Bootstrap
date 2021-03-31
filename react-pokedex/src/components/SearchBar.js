@@ -16,6 +16,7 @@ const SearchBar = ({input:keyword, onChange:setKeyword}) => {
 
   const BarStyling = { marginLeft: "auto", marginTop: "10px", fontSize: "20px", fontWeight: "300", color: "#333", lineHeight: "1.625", backgroundColor: "#fff", borderColor: "#eee", border: "none", borderBottom: "1px solid #9e9e9e", boxShadow: "none", boxSizing: "content-box", borderRadius: "0", backgroundImage: "url( //addsearch.com/logo/AAAAAA-20.png )", backgroundRepeat: "no-repeat", backgroundPosition: "95% 50%", width: "33%", padding: "5px", cursor: "auto", outline: "none" };
   return (
+    
       <div>
           <Button style = {{marginBottom: "5px", backgroundColor:"#09bdb7", border:"none"  }} onClick={handleClick}>Return Home</Button>{' '}
     <input 
