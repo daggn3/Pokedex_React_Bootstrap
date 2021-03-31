@@ -7,7 +7,7 @@ import Homepage from './pages/Homepage';
 import PokemonPage from './pages/Pokemonpage';
 
 // Components
-import Header from './components/Header';
+
 import Gen1page from './pages/Gen1page';
 import Gen2page from "./pages/Gen2page"
 import Gen3page from "./pages/Gen3page"
@@ -15,7 +15,6 @@ import Gen3page from "./pages/Gen3page"
 const App = () => {
   return (
     <Router>
-      
       <Container>
         <Route exact path='/Pokedex_React_Bootstrap' component={Homepage} />
         <Route exact path='/gen1' component={Gen1page} />

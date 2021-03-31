@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Row, Col, Card, Nav, Form, Button, Jumbotron, Container} from 'react-bootstrap';
+import React from 'react';
+
+import { Row,  Card, Button, Jumbotron, Container} from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-import pokeball from "../"
+
 
 // Components
-import Pokemon from '../components/Pokemon';
-import Loading from '../components/Loading';
-
 const Homepage = () => {
     
     

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Search } from 'react-bootstrap-icons';
+
 import { useHistory } from 'react-router-dom';
-import { Nav, Container, Form, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 const SearchBar = ({input:keyword, onChange:setKeyword}) => {
 

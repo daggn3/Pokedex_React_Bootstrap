@@ -1,7 +1,6 @@
 import React from 'react';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Nav, Container, Form, Button } from 'react-bootstrap';
-import pokeball from "./pokeball.png"
+import { Button } from 'react-bootstrap';
+
 import { useHistory } from 'react-router-dom';
 
 

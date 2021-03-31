@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Row, Col, Nav, Form, FormControl, Button } from 'react-bootstrap';
-import { Search } from 'react-bootstrap-icons';
+import { Row, Col } from 'react-bootstrap';
+
 
 // Components
 import Pokemon from '../components/Pokemon';
 import Loading from '../components/Loading';
-import Gen1 from "./images/gen1.jpg"
-import Header from '../components/Header';
+
 import SearchBar from '../components/SearchBar';
 
 const Gen1page = (props) => {

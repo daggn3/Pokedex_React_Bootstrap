@@ -3,8 +3,7 @@ import axios from 'axios';
 import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
-import Header from '../components/Header';
-import { Nav, Container, Form, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
 
