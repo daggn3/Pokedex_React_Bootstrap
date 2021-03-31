@@ -43,7 +43,7 @@ const Homepage = () => {
                     <Card.Text>
                         Pokémon from #1-151!
                     </Card.Text>
-                        <Button variant="primary" onClick={gen1}>Find Out More!</Button>
+                        <Button style = {{ backgroundColor:"#09bdb7", border:"none"  }} onClick={gen1}>Find Out More!</Button>
                     </Card.Body>
             </Card>
             <Card style={{ width: '18rem', margin:"auto", marginBottom:"140px", marginTop:"20px"}}>
@@ -53,7 +53,7 @@ const Homepage = () => {
                     <Card.Text>
                         Pokémon from #152-251!
                     </Card.Text>
-                    <Button variant="primary" onClick={gen2}>Find Out More!</Button>
+                    <Button style = {{ backgroundColor:"#09bdb7", border:"none"  }} onClick={gen2}>Find Out More!</Button>
                     </Card.Body>
             </Card>
             <Card style={{ width: '18rem', margin:"auto", marginBottom:"140px", marginTop:"20px"}}>
@@ -63,7 +63,7 @@ const Homepage = () => {
                     <Card.Text>
                         Pokémon from #252-386!
                     </Card.Text>
-                    <Button variant="primary" onClick={gen3}>Find Out More!</Button>
+                    <Button style = {{ backgroundColor:"#09bdb7", border:"none"  }} onClick={gen3}>Find Out More!</Button>
                     </Card.Body>
             </Card>
             </Row>

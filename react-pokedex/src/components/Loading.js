@@ -3,7 +3,7 @@ import { Spinner, Col, Row } from 'react-bootstrap';
 
 const Loading = () => {
     return (
-        <div className='d-flex justify-content-center mt-5' style={{ height: '100vh', color: "lilac"}}>
+        <div className='d-flex justify-content-center mt-5' style={{ height: '100vh', color:"#09bdb7"}}>
             <Row>
                 <Col>
                     <Spinner
