@@ -51,7 +51,7 @@ const PokemonPage = ({ match }) => {
                     <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Card className='my-3 p-3 rounded text-center shadow p-3 mb-5 bg-white' style={{ border: 'none' }}>
                             <Link to={`/pokemon/${pokemonInfo.id}`}>
-                                <Card.Img style={{ width: '15rem' }} src={pokemonInfo.sprites.front_default} variant='top'/>
+                                <Card.Img style={{ width: '15rem', marginBottom: "10px" }} src={pokemonInfo.sprites.other.dream_world.front_default} variant='top'/>
                             </Link>
                             <Card.Body className={`${pokemonInfo.types[0].type.name} rounded text-white`}>
                                 <Link to={`/pokemon/${pokemonInfo.name}`} className='link-name'>

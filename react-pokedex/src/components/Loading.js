@@ -14,9 +14,9 @@ const Loading = () => {
                     </Spinner>
                 </Col>
             </Row>
-            <Row>
+            <Row >
                 <Col>
-                    <div className='mx-3' > Fetching Pokemon...</div>
+                    <div className='mx-3' style = {{fontSize: "25px"}} > Fetching Pokemon...</div>
                 </Col>
             </Row>
         </div>

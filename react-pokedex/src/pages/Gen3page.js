@@ -47,16 +47,16 @@ const Gen3page = () => {
 
     return (
         <>
+        <SearchBar
+              
+              input={input} 
+              onChange={updateInput}
+        />
 
         {loading ? (
             <Loading/>
         ) : (
             <div>
-            <SearchBar
-              
-              input={input} 
-              onChange={updateInput}
-            />
             <Row>
                 {pokemon.map( p =>(
                     <Col key={p.data.name} xs={12} sm={12} md={4} lg={4} xl={4}>
