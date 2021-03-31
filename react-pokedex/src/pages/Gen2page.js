@@ -6,6 +6,7 @@ import { Row, Col, Nav, Form, Button } from 'react-bootstrap';
 import Pokemon from '../components/Pokemon';
 import Loading from '../components/Loading';
 import SearchBar from "../components/SearchBar"
+import Header from '../components/Header';
 
 const Gen1page = () => {
 
@@ -44,6 +45,7 @@ const Gen1page = () => {
 
     return (
         <>
+
         {loading ? (
             <Loading/>
         ) : (

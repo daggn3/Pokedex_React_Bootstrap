@@ -3,7 +3,7 @@ import { Spinner, Col, Row } from 'react-bootstrap';
 
 const Loading = () => {
     return (
-        <div className='d-flex justify-content-center mt-5' style={{ height: '100vh' }}>
+        <div className='d-flex justify-content-center mt-5' style={{ height: '100vh', color: "lilac"}}>
             <Row>
                 <Col>
                     <Spinner
@@ -16,7 +16,7 @@ const Loading = () => {
             </Row>
             <Row>
                 <Col>
-                    <div className='mx-3'> Fetching Pokemon...</div>
+                    <div className='mx-3' > Fetching Pokemon...</div>
                 </Col>
             </Row>
         </div>

@@ -4,6 +4,10 @@ import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import Header from '../components/Header';
+import { Nav, Container, Form, Button } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
+
+
 
 //await Promise.all(images.map(e => axios.get(e)))
 const PokemonPage = ({ match }) => {
@@ -20,6 +24,13 @@ const PokemonPage = ({ match }) => {
         setLoading(false);
     }
 
+    let history = useHistory();
+
+    const handleClick = () => {
+        history.push('/Pokedex_React_Bootstrap')
+      }
+  
+
     const getPokemonData = async (id) => {
         const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
         return res;
@@ -31,6 +42,7 @@ const PokemonPage = ({ match }) => {
 
     return (
         <>
+        <Button style = {{marginTop: "10px", backgroundColor:"#09bdb7", border:"none"  }} onClick={handleClick}>Return Home</Button>{' '}
             {loading ? (
                 <Loading/>
             ) : (
