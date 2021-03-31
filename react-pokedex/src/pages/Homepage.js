@@ -23,7 +23,7 @@ const Homepage = () => {
     return (
         <>
             <div style = {{paddingTop:"50px"}}>
-            <Jumbotron fluid style = {{marginBottom:"50px", borderRadius: "10px", backgroundColor:"#f27c7c", color:"white" }}>
+            <Jumbotron fluid style = {{marginBottom:"50px", borderRadius: "10px", backgroundColor:"#09bdb7", color:"white" }}>
         <Container>
        
             <h1>A React Pokédex</h1>
