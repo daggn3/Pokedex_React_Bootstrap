@@ -15,7 +15,7 @@ const SearchBar = ({input:keyword, onChange:setKeyword}) => {
     
 
 
-  const BarStyling = {marginTop: "10px", fontSize: "16px", fontWeight: "300", lineHeight: "1.625", backgroundColor: "#eee", backgroundImage: "url(//addsearch.com/logo/AAAAAA-20.png)", backgroundRepeat: "no-repeat", backgroundPosition: "95% 50%", border: "0px", borderRadius: "32px", width: "33%", padding: "15px", cursor:"auto", outline: "none"};
+  const BarStyling = {marginTop: "10px", fontSize: "16px", fontWeight: "300", lineHeight: "1.625", backgroundColor: "#eee", backgroundImage: "url(//addsearch.com/logo/AAAAAA-20.png)", backgroundRepeat: "no-repeat", backgroundPosition: "95% 50%", border: "0px", borderRadius: "32px", width: "50%", padding: "15px", cursor:"auto", outline: "none"};
   return (
     
       <div>
