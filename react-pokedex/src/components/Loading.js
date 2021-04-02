@@ -16,7 +16,7 @@ const Loading = () => {
             </Row>
             <Row >
                 <Col>
-                    <div className='mx-3' style = {{fontSize: "25px"}} > Fetching Pokemon...</div>
+                    <div className='mx-3' style = {{fontSize: "25px"}} > Catching 'Em All...</div>
                 </Col>
             </Row>
         </div>
